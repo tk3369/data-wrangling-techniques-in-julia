@@ -135,7 +135,7 @@ let
     data = @pipe df |>
         select(_, :County, :year, [:Female, :Male] => ByRow(+) => :total) |>
         unstack(_, :year, :total)
-    values = Matrix(data[:, 2:6])'
+    values = Matrix(data[:, 2:end])
     StatsPlots.heatmap(2008:2012, data.County, values;
         title = "Youth Suicide Heatmap",
         xticks = :all,
