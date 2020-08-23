@@ -1,6 +1,7 @@
-# JuliaCN 2020 Meeting
+# Data Wrangling Techniques in Julia
 
-This repo contains demo scripts for the talk "Data Wrangling Techniques in Julia".
+This repo contains demo scripts for the Data Wrangling talk at
+JuliaCN 2020 meeting.
 
 There are three programs:
 * [0_presentation.jl](0_presentation.jl) contains code used in the slides
