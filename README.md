@@ -1,7 +1,7 @@
 # Data Wrangling Techniques in Julia
 
 This repo contains demo scripts for the Data Wrangling talk at
-JuliaCN 2020 meeting.
+JuliaCN 2020 meeting. The [presentation slides](https://docs.google.com/presentation/d/e/2PACX-1vRWgoWOJ8UaVImkY4YSJLX43MiR4ysl_39diR3x-2TnRF0-gMQZS2HFmk9kNAg35QuF0ZjzheYuxwEw/pub?start=false&loop=false&delayms=3000&slide=id.g91d9fb9dd3_0_3) have been published.
 
 There are three programs:
 * [0_presentation.jl](0_presentation.jl) contains code used in the slides
