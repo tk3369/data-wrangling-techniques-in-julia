@@ -3,7 +3,7 @@
 This repo contains demo scripts for the talk "Data Wrangling Techniques in Julia".
 
 There are three programs:
-* [0_presentaton.jl](0_presentaton.jl) contains code used in the slides
+* [0_presentation.jl](0_presentation.jl) contains code used in the slides
 * [1_wa_youth_suicide.jl](1_wa_youth_suicide.jl) data wrangling exercise #1
 * [2_tips_yield_curve.jl](2_tips_yield_curve.jl) data wrangling exercise #2
 
