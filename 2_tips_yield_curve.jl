@@ -61,7 +61,8 @@ count(ismissing, Matrix(df240[:, 2:127]))
 
 # Let's drop those 240 rows.
 df
-filter!(:BETA0 => !ismissing, df)
+dropmissing!(df, :BETA0)
+# filter!(:BETA0 => !ismissing, df)
 
 # See what else is missing
 meta = describe(df)
