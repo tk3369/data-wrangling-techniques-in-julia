@@ -69,6 +69,15 @@ using Plots, StatsPlots
 
 filter(:County => ==("King"), df)
 
+# line chart
+@pipe df |>
+    filter(:County => ==("King"), _) |>
+    plot(_.year, _.Male, 
+        title = "King County Youth Suicides (Male)",
+        legend = :none,
+        size = (300, 300))
+
+# bar chart
 @pipe df |>
     filter(:County => ==("King"), _) |>
     bar(_.year, _.Male, 
