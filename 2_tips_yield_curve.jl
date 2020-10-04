@@ -31,7 +31,13 @@ bytes = transcode(GzipDecompressor, Mmap.mmap("data/feds200805.csv.gz"))
 # this doesn't work
 df = DataFrame(CSV.File(bytes))
 
+# Let's examine the decompressed text
+str = String(bytes);
+split(str, "\n")[1:5]
+split(str, "\n")[15:20]
+
 # Skip the header comments
+bytes = transcode(GzipDecompressor, Mmap.mmap("data/feds200805.csv.gz"))
 df = DataFrame(CSV.File(bytes; header = 19))
 
 # Why do all columns have String types?
@@ -39,6 +45,7 @@ describe(df)
 show(describe(df), allrows = true)
 
 # Let's read the file again and parse those NA's correctly
+bytes = transcode(GzipDecompressor, Mmap.mmap("data/feds200805.csv.gz"))
 df = DataFrame(CSV.File(bytes; header = 19, missingstring = "NA"))
 
 # How much data is missing?
